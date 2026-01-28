@@ -12,3 +12,14 @@ per-file-ignores = [
     '__init__.py:F401',
 ]
 max-line-length = 100
+
+[tool.pytest.ini_options]
+addopts = """
+    --html=reports/report.html 
+    --self-contained-html 
+    --cov=.
+    --cov-report=term 
+    --cov-report=html:reports/coverage
+    """
+testpaths = ["tests"]
+pythonpath = ["."]
