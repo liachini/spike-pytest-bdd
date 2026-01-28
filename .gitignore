@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+Pipfile.lock
+
+# Behave/Coverage Reports
+reports/
+.coverage
+htmlcov/
