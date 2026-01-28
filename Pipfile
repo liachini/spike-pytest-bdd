@@ -17,3 +17,10 @@ pytest-cov = "==6.0.0"
 
 [requires]
 python_version = "3.10"
+
+[scripts]
+test = "pytest"
+# Questo comando apre il report usando il browser predefinito del sistema operativo
+report = "python -c \"import webbrowser, os; webbrowser.open('file://' + os.path.realpath('reports/report.html'))\""
+# Anche per la coverage puoi fare lo stesso
+coverage-report = "python -c \"import webbrowser, os; webbrowser.open('file://' + os.path.realpath('reports/coverage/index.html'))\""
