@@ -81,3 +81,12 @@ Oltre ai comandi da terminale, puoi utilizzare l'interfaccia grafica di VS Code 
 - Puoi avviare singoli test o intere cartelle cliccando sull'icona ▶️
 
 ---
+
+## NOTE
+
+Per far funzionare sia la navigazione nelle feature (go to step) che il passaggio di parametri ad uno step occorre inserire due decoratori
+
+- @given("ho il numero {numero}") - questo per la navigazione
+- @given(parsers.parse("ho il numero {numero:d}")) - questo per la gestione dei parametri
+
+---

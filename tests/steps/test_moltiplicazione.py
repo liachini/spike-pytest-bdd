@@ -2,7 +2,7 @@ import pytest
 from pytest_bdd import scenario, given, when, then, parsers
 
 
-@scenario("../features/moltiplicazione.feature", "moltiplicare 2 numeri")
+@scenario("moltiplicazione.feature", "moltiplicare 2 numeri")
 def test_moltiplicazione():
     pass
 

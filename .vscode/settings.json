@@ -3,5 +3,16 @@
   "python.testing.pytestArgs": ["tests"],
   "python.testing.autoTestDiscoverOnSaveEnabled": true,
   "editor.defaultFormatter": "ms-python.black-formatter",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "cucumberautocomplete.steps": [
+        "tests/steps/*.py",
+        "tests/conftest.py"
+    ],
+    "cucumberautocomplete.syncfeatures": "tests/features/*.feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.smartSnippets": true,
+    "cucumberautocomplete.onTypeFormat": true,
+    "files.associations": {
+        "*.feature": "feature"
+    }
 }

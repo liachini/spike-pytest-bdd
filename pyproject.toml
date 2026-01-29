@@ -14,12 +14,14 @@ per-file-ignores = [
 max-line-length = 100
 
 [tool.pytest.ini_options]
-addopts = """
-    --html=reports/report.html 
-    --self-contained-html 
-    --cov=.
-    --cov-report=term 
-    --cov-report=html:reports/coverage
-    """
+bdd_features_base_dir = "tests/features"
 testpaths = ["tests"]
+python_files = ["test_*.py"]
 pythonpath = ["."]
+addopts = """
+    --html=reports/report.html
+    --self-contained-html
+    --cov=.
+    --cov-report=term
+    --cov-report=html:reports/coverage
+"""
