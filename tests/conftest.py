@@ -1,5 +1,5 @@
 import pytest
-from support.mqtt_client import MqttClient
+from mqtt.mqtt_client import MqttClient
 
 BROKER = "10.130.127.1"
 PORT = 1883
