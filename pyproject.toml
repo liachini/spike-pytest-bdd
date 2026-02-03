@@ -21,7 +21,4 @@ pythonpath = ["."]
 addopts = """
     --html=reports/report.html
     --self-contained-html
-    --cov=.
-    --cov-report=term
-    --cov-report=html:reports/coverage
 """
